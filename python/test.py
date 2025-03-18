@@ -1,18 +1,8 @@
-class Solution:
-    def reverse(self, x: int) -> int:
-        if x < 0:
-            x = -x
-            x = str(x)
-            x = int(x[::-1])
-            x = -x
-        
-        else:
-            x = str(x)
-            x = int(x[::-1])
-
-        return x
-        
-
-
-solution = Solution()
-print(solution.reverse(-120))  # Output: 321
+def isPalindrome(s):
+    reversed_str = s[::-1]
+    if reversed_str == s:
+        return f"{s} is a palindrome number"
+    else:
+        return f"{s} is not a palindrome number"
+s = input()
+print(isPalindrome(s))
