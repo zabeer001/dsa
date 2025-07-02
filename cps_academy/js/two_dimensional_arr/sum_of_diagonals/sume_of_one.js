@@ -11,7 +11,7 @@ function getDiagonalSum(arr) {
         }
         sum += arr[k][(arr.length - 1) - k];
     }
-    
+
     return sum;
 }
 
@@ -20,8 +20,6 @@ arr = [
     [1, 6, 9],
     [8, 98, 13]
 ];
-
-
 
 let sum = getDiagonalSum(arr);
 
