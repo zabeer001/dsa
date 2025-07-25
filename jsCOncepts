@@ -1,0 +1,134 @@
+Core & Execution
+Execution Context
+
+Call Stack
+
+Lexical Scope & Scope Chain
+
+Hoisting
+
+Temporal Dead Zone (TDZ)
+
+this Binding (4 rules + arrow functions)
+
+Closures
+
+Higher-Order Functions
+
+Function Currying
+
+Partial Application
+
+Objects & Prototypes
+Prototypes & Prototype Chain
+
+__proto__ vs prototype
+
+ES6 Classes vs Constructor Functions
+
+Object.create()
+
+new Keyword & Object Instantiation
+
+Object.defineProperty
+
+Getters and Setters
+
+Object.freeze vs seal vs preventExtensions
+
+Property Descriptors (writable, configurable)
+
+hasOwnProperty vs in Operator
+
+Asynchronous & Event Loop
+Event Loop (Call Stack, Web APIs, Callback Queue)
+
+Microtasks vs Macrotasks (Promises vs setTimeout)
+
+setTimeout vs setImmediate vs process.nextTick (Node.js)
+
+Promises & Promise Chaining
+
+Promise.all vs allSettled vs race vs any
+
+Async/Await (with error handling)
+
+Event Delegation
+
+Debouncing & Throttling
+
+Fetch API vs Axios
+
+AbortController (Cancel fetch requests)
+
+Data Types & Tricky Behavior
+Primitive vs Reference Types
+
+Type Coercion (Implicit & Explicit)
+
+Falsy vs Truthy Values
+
+== vs ===
+
+Optional Chaining (?.)
+
+Nullish Coalescing (??)
+
+Spread Operator vs Rest Parameters
+
+Object.assign vs Deep Copy
+
+Destructuring (Array & Object)
+
+BigInt and Symbol
+
+Advanced Arrays & Iterables
+map, filter, reduce, flat, flatMap
+
+for...in vs for...of
+
+Array-like Objects vs Iterables
+
+Array.from vs Spread Operator
+
+WeakMap vs WeakSet vs Map vs Set
+
+every vs some vs find vs findIndex
+
+Sorting Pitfalls (sort() vs compare function)
+
+ArrayBuffer & Typed Arrays
+
+Generators & Iterators
+
+Async Generators
+
+Miscellaneous Advanced
+IIFE (Immediately Invoked Function Expression)
+
+Module Pattern vs CommonJS vs ES Modules
+
+Service Workers & Caching
+
+Web Workers vs Main Thread
+
+Proxy & Reflect API
+
+Event Bubbling vs Capturing
+
+Shadow DOM & DOM Reflow/Repaint
+
+Garbage Collection & Memory Leaks
+
+call, apply, bind
+
+Tagged Template Literals
+
+Custom Errors & Error Handling
+
+Bitwise Operators in JS
+
+Intl API (Internationalization)
+
+Performance APIs (requestAnimationFrame, Performance.now)
+
