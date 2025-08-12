@@ -1,0 +1,47 @@
+Got it — let’s use Router service instead of Payment so you can see how a real Laravel core service works.
+
+Scenario: How Laravel handles the Router Service
+Step 1 — The Service (Router)
+Laravel has a class that handles all route registration and matching:
+
+📍 Location in Laravel:
+
+swift
+Copy
+Edit
+vendor/laravel/framework/src/Illuminate/Routing/Router.php
+This is the Router service — it has methods like:
+
+php
+Copy
+Edit
+$router->get('/users', [UserController::class, 'index']);
+$router->post('/users', [UserController::class, 'store']);
+Step 2 — The Service Provider (Registers Router into Container)
+Laravel binds this service in its Routing Service Provider:
+
+📍 vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php
+
+php
+Copy
+Edit
+public function register()
+{
+    $this->app->singleton('router', function ($app) {
+        return new Router($app['events'], $app);
+    });
+}
+$this->app → the service container.
+
+.singleton() → tells the container to only make one instance of Router.
+
+'router' → the binding name you can use to resolve it.
+
+Step 3 — The Service Container (Resolves it)
+When your Laravel app boots:
+
+RoutingServiceProvider runs.
+
+It tells the container: “When someone asks for 'router', make a Router object with $app['events'] and $app.”
+
+The container stores this binding.
