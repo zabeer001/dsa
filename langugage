@@ -10,3 +10,10 @@
 
 4. php
     -OOP (w3 school)
+    
+    
+    docker run --rm -v $(pwd):/usr/src/myapp -w /usr/src/myapp php php test.php
+    
+    sudo docker run --rm -v /var/www/laravel:/usr/src/myapp -w /usr/src/myapp php php test.php
+
+

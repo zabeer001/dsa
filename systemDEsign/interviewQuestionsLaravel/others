@@ -1,0 +1,97 @@
+ ORM & Query Confusion Traps
+Difference between:
+
+get() vs pluck() vs value()
+
+first() vs firstOrFail() vs findOrFail()
+
+Why does this fail?
+
+php
+Copy
+Edit
+User::where('status', 'active')->update(['status' => 'inactive'])->get();
+When to use withCount() instead of joining tables manually.
+
+The difference between:
+
+with() vs load() vs loadMissing()
+
+whereHas() vs has() vs doesntHave() — and when to use each.
+
+Why orderBy() in Eloquent sometimes doesn’t work when eager loading with constraints.
+
+Why pluck() from a relationship returns a collection of arrays and how to fix it.
+
+The difference between increment() / decrement() vs manually updating the column.
+
+Why grouping (groupBy) without selectRaw() or DB::raw() can cause a "nonaggregated column" error.
+
+Why count() after get() gives different results from count() before get().
+
+🔥 Relationships Gotchas
+The difference between $user->posts()->count() and $user->posts->count().
+
+Why eager loading prevents N+1 query problem — and when lazy loading is better.
+
+How to apply a constraint on an eager-loaded relationship.
+
+How to use pivot table columns ($user->pivot->created_at) in many-to-many.
+
+Why soft-deleted pivot table data isn’t retrieved by default in relationships.
+
+Why $user->roles()->attach($id) might fail silently if the record already exists.
+
+Why updating pivot data requires sync() or updateExistingPivot().
+
+🔥 Migrations & Schema Traps
+The difference between:
+
+constrained() vs manually defining foreignId() + references() + on()
+
+What happens if you forget to make foreign key unsigned in older MySQL versions.
+
+Why renaming columns with Schema::table() needs the doctrine/dbal package.
+
+The difference between timestamps() and nullableTimestamps().
+
+Why enum() is dangerous in migrations and how to replace it with string + constants.
+
+🔥 Middleware & Auth Gotchas
+Difference between:
+
+auth() helper vs Auth facade vs Auth::guard()
+
+Why middleware registered in $routeMiddleware behaves differently than in $middleware.
+
+Why auth()->user() can return null even when the session seems valid.
+
+Difference between:
+
+@can Blade directive vs Gate::allows() vs policy methods.
+
+Why Auth::attempt() returns true but user can’t access protected routes.
+
+🔥 Collections & Helper Confusions
+Difference between:
+
+map() vs each() vs transform()
+
+Why pluck() on a collection vs pluck() in query builder behave differently.
+
+Difference between filter() vs reject().
+
+Why unique() works differently on collections vs query builder.
+
+Why contains() might fail when comparing objects vs primitives.
+
+🔥 Real-Life Tricky Scenarios
+You need to fetch all posts that don’t have comments in the last 7 days — how?
+
+You need to update or insert multiple records without looping — what’s the method?
+
+You have users and orders — get the top 3 users with the most orders.
+
+Get all users with at least one failed payment attempt in the last month.
+
+Get all products where stock is less than average stock of all products.

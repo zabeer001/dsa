@@ -1,0 +1,101 @@
+1. Joins (Basics & Tricky Variants)
+INNER JOIN — only matching rows in both tables.
+
+LEFT JOIN — all from left table + matching from right (NULL if no match).
+
+RIGHT JOIN — all from right table + matching from left (less common in Laravel).
+
+FULL OUTER JOIN — all rows from both (PostgreSQL, not in MySQL directly).
+
+SELF JOIN — joining a table to itself (e.g., categories with parent_id).
+
+CROSS JOIN — every combination of rows (rare, but interviewers like it as a “gotcha”).
+
+2. Filtering & Conditions
+WHERE vs HAVING (HAVING is for filtered aggregated results).
+
+BETWEEN — date or numeric range checks.
+
+IN / NOT IN — filtering against multiple values or subquery results.
+
+IS NULL / IS NOT NULL — detecting empty relationships.
+
+LIKE / ILIKE — pattern matching (case-insensitive in PostgreSQL).
+
+Wildcards:
+
+% → multiple characters
+
+_ → single character
+
+3. Aggregates
+COUNT(), SUM(), AVG(), MIN(), MAX()
+
+Grouping with GROUP BY
+
+Filtering grouped data with HAVING
+
+Tricky: COUNT(DISTINCT column)
+
+4. Subqueries
+Inline in SELECT:
+
+sql
+Copy
+Edit
+SELECT name, (SELECT COUNT(*) FROM orders WHERE orders.user_id = users.id) AS order_count
+FROM users;
+In WHERE:
+
+sql
+Copy
+Edit
+SELECT * FROM users WHERE id IN (SELECT user_id FROM orders);
+Correlated subqueries (depends on outer query values).
+
+5. Sorting & Limiting
+ORDER BY ASC/DESC
+
+Multi-column sorting (ORDER BY created_at DESC, name ASC)
+
+LIMIT & OFFSET
+
+MySQL’s LIMIT x, y syntax vs PostgreSQL’s OFFSET syntax
+
+6. Modifying Data
+INSERT
+
+UPDATE (single & multi-table updates)
+
+DELETE
+
+UPSERT (INSERT ... ON DUPLICATE KEY UPDATE in MySQL, INSERT ... ON CONFLICT in PostgreSQL)
+
+7. Table Operations
+CREATE TABLE
+
+ALTER TABLE (add/drop/change columns)
+
+DROP TABLE
+
+TRUNCATE (resets table but faster than DELETE)
+
+8. Indexes & Performance
+How to check indexes
+
+EXPLAIN query to check performance
+
+Why indexes speed up searches but slow down inserts
+
+9. Special Operators & Functions
+CASE WHEN (conditional logic in queries)
+
+String functions: CONCAT(), SUBSTRING(), LOWER(), UPPER(), TRIM()
+
+Date functions: NOW(), DATE_ADD(), DATEDIFF()
+
+MySQL vs PostgreSQL differences (important if company uses one specifically)
+
+10. Transactions
+BEGIN, COMMIT, ROLLBACK — why they matter in multiple updates/inserts
+

@@ -1,0 +1,205 @@
+🔥 Laravel Real-World Query Scenarios — 100 Practice Questions
+1–20: Relationship Existence & Filtering
+Fetch all posts that don’t have comments in the last 7 days.
+
+Get all users who have never placed an order.
+
+Retrieve all products that have at least 10 reviews.
+
+Find categories that have more than 5 products.
+
+Get users who have more than 3 active subscriptions.
+
+Retrieve authors who have at least one published book in the last year.
+
+Get all stores that don’t have any products in stock.
+
+Find all posts that have both "Laravel" and "PHP" tags.
+
+Get events that have no attendees.
+
+Fetch courses that have more than 100 enrolled students.
+
+Retrieve all drivers who have completed at least 50 rides.
+
+Get all books that have never been borrowed.
+
+Find teachers who teach in more than one department.
+
+Retrieve musicians who have at least 5 albums.
+
+Get movies that have no ratings.
+
+Fetch all hotels with more than 10 available rooms.
+
+Get all products that belong to more than 3 categories.
+
+Retrieve all students who have failed at least one subject.
+
+Find employees who have exactly 2 roles assigned to them.
+
+Get orders that don’t have any associated payment records.
+
+21–40: Aggregates & Ranking
+Get the top 3 users with the most orders.
+
+Retrieve the most recent comment for each post.
+
+Get the total sales amount for each user, ordered by highest first.
+
+Find the top 5 products by number of orders in the last month.
+
+Get the top 10 most commented posts of all time.
+
+Retrieve categories with the highest number of products.
+
+Find the average order value per customer.
+
+Get the maximum order amount for each user.
+
+Retrieve products where stock is less than the average stock of all products.
+
+Find the total revenue grouped by month for the current year.
+
+Get the minimum salary for each department.
+
+Retrieve the top 3 authors by total number of book sales.
+
+Find the city with the most registered users.
+
+Get the number of orders placed per day for the last 7 days.
+
+Find the top 5 students by GPA.
+
+Get the highest-rated product in each category.
+
+Retrieve the average rating for each movie.
+
+Find the best-selling product of all time.
+
+Get the most active user in the last 24 hours.
+
+Retrieve the product with the highest profit margin in each category.
+
+41–60: Conditional & Complex Filtering
+Get all users with at least one failed payment in the last month.
+
+Retrieve orders placed in the last 30 days but not yet shipped.
+
+Find all customers who placed an order but not in the last year.
+
+Get all posts where the number of comments is greater than the number of likes.
+
+Retrieve all users who registered in the last 30 days and have at least 1 order.
+
+Get all products that were never purchased.
+
+Find orders with both "Electronics" and "Accessories" products.
+
+Retrieve events happening within the next 14 days.
+
+Get hotels with available rooms and at least a 4-star rating.
+
+Find employees who joined in the last 6 months but haven’t taken any leave.
+
+Get all blog posts that have no tags assigned.
+
+Retrieve customers who ordered from multiple cities.
+
+Find all students who failed more than 2 subjects in a semester.
+
+Get users who have both "admin" and "editor" roles.
+
+Retrieve all customers with pending invoices older than 60 days.
+
+Get books that were borrowed more than 5 times but never returned late.
+
+Find all users who purchased both Product A and Product B.
+
+Get all movies released in the last year with no awards.
+
+Retrieve all drivers with no accidents in the last 3 years.
+
+Get all teachers who teach in exactly one subject.
+
+61–80: Pivot Table & Many-to-Many
+Get pivot table data when retrieving user roles.
+
+Retrieve all products where pivot table discount is greater than 20%.
+
+Find all students enrolled in more than 3 courses.
+
+Get courses where the pivot field "completed" is true.
+
+Retrieve all teams that have more than 5 players.
+
+Find all users assigned to more than 2 projects.
+
+Get all employees working on a specific project with a pivot "role" of "Manager".
+
+Retrieve all books authored by multiple authors.
+
+Get all bands with more than 4 active members.
+
+Find companies partnered for more than 2 years (pivot date condition).
+
+Retrieve all orders where the pivot "quantity" is greater than 5.
+
+Get all products in multiple orders from the same user.
+
+Find users who liked more than 20 posts.
+
+Retrieve posts tagged with more than 3 tags.
+
+Get musicians in at least 2 different bands.
+
+Find courses co-taught by multiple teachers.
+
+Retrieve all stores with suppliers in more than 3 regions.
+
+Get events with attendees from more than 5 cities.
+
+Find athletes who participated in at least 3 tournaments.
+
+Retrieve all recipes with ingredients from more than 2 categories.
+
+81–100: Mixed Complex Scenarios
+Update or insert multiple records without looping.
+
+Delete all users without any related orders.
+
+Increment stock for all products in a given category by 10.
+
+Mark all unread notifications for a user as read.
+
+Archive all posts older than 2 years.
+
+Reset password for all inactive users.
+
+Copy all roles from one user to another.
+
+Deactivate all subscriptions that expired last month.
+
+Assign a default role to all users without a role.
+
+Remove a specific tag from all posts.
+
+Attach a discount to all products in a specific category.
+
+Remove all attendees from events in the past.
+
+Sync roles for a list of users without duplicates.
+
+Restore all soft-deleted records in a table.
+
+Force delete all products without sales in the last 2 years.
+
+Change the status of all unpaid invoices to "overdue".
+
+Increase salary by 5% for all employees in a department.
+
+Transfer all orders from one user to another.
+
+Duplicate a product along with all its relationships.
+
+Generate a leaderboard of top customers based on total spending.
