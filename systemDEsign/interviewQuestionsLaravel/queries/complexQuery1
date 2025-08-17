@@ -1,0 +1,21 @@
+// give me the countries where we have more than 100 customers with each over 100k value
+
+// how to get the value there is a  table called deals there id , user_id, value is there
+
+// the value is needed where avg deal val is more than 100k
+<?php
+use Illuminate\Support\Facades\DB;
+
+$userIds = DB::table('deals')
+    ->select('user_id')
+    ->groupBy('user_id')
+    ->havingRaw('AVG(value) > 100000')
+    ->pluck('user_id');
+
+$data= Countries::whereHas("users",function(usersQuery) use($userIds){
+
+usersQuery->whereIn("id",$userIds)
+
+},">",100)->get();
+
+?>

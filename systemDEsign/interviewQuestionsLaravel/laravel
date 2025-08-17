@@ -40,10 +40,11 @@ Find employees who have exactly 2 roles assigned to them.
 
 Get orders that don’t have any associated payment records.
 
-21–40: Aggregates & Ranking
+<======================= 21–40: Aggregates & Ranking =============================> 
+
 Get the top 3 users with the most orders.
 
-Retrieve the most recent comment for each post.
+Retrieve the most recent comment for a post.
 
 Get the total sales amount for each user, ordered by highest first.
 
@@ -80,6 +81,10 @@ Find the best-selling product of all time.
 Get the most active user in the last 24 hours.
 
 Retrieve the product with the highest profit margin in each category.
+
+
+<======================= 41–60: Conditional & Complex Filtering =============================> 
+
 
 41–60: Conditional & Complex Filtering
 Get all users with at least one failed payment in the last month.
@@ -143,7 +148,7 @@ Get all bands with more than 4 active members.
 
 Find companies partnered for more than 2 years (pivot date condition).
 
-Retrieve all orders where the pivot "quantity" is greater than 5.
+***** Retrieve all orders where the pivot "quantity" is greater than 5.
 
 Get all products in multiple orders from the same user.
 
@@ -159,11 +164,13 @@ Retrieve all stores with suppliers in more than 3 regions.
 
 Get events with attendees from more than 5 cities.
 
+give me the countries where we have more than 100 customers
+
 Find athletes who participated in at least 3 tournaments.
 
 Retrieve all recipes with ingredients from more than 2 categories.
 
-81–100: Mixed Complex Scenarios
+<================================== 81–100: Mixed Complex Scenarios ===========================================>
 Update or insert multiple records without looping.
 
 Delete all users without any related orders.
