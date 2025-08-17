@@ -18,19 +18,15 @@ var merge = function (intervals) {
         let num = arr2[0]
 
         if (checkIfIn(arr1, num)) {
-            console.log("asd");
-
             arr1[1] = Math.max(arr1[1], arr2[1]);
             intervals.splice(i + 1, 1); 
             i--; 
             len--;
-
         }
 
     }
 
     return intervals
-
 };
 
 let intervals = [[1, 4], [0, 4]]
