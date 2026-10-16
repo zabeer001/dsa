@@ -1,0 +1,268 @@
+Easy Raw SQL Practice Questions
+
+Use these tables while practicing:
+
+users
+- id
+- name
+- email
+- city
+- status
+- created_at
+
+posts
+- id
+- user_id
+- title
+- status
+- created_at
+
+comments
+- id
+- post_id
+- user_id
+- body
+- created_at
+
+products
+- id
+- name
+- price
+- stock
+- category_id
+- created_at
+
+categories
+- id
+- name
+
+orders
+- id
+- user_id
+- total_amount
+- status
+- created_at
+
+order_items
+- id
+- order_id
+- product_id
+- quantity
+- price
+
+payments
+- id
+- order_id
+- amount
+- status
+- created_at
+
+<======================= 1-20: Basic SELECT and WHERE =======================>
+
+1. Fetch all users.
+
+2. Fetch only the name and email of all users.
+
+3. Fetch all active users.
+
+4. Fetch all users from Dhaka.
+
+5. Fetch all users who are not active.
+
+6. Fetch all products with price greater than 1000.
+
+7. Fetch all products with stock less than 10.
+
+8. Fetch all posts with status published.
+
+9. Fetch all orders with status pending.
+
+10. Fetch all payments with status failed.
+
+11. Fetch all users created today.
+
+12. Fetch all users created in the last 7 days.
+
+13. Fetch all posts created in the last 30 days.
+
+14. Fetch all products where price is between 500 and 2000.
+
+15. Fetch all users whose city is Dhaka, Chittagong, or Sylhet.
+
+16. Fetch all users whose name starts with A.
+
+17. Fetch all products whose name contains phone.
+
+18. Fetch all users where email is not null.
+
+19. Fetch all products where stock is 0.
+
+20. Fetch all orders where total_amount is greater than or equal to 5000.
+
+<======================= 21-40: ORDER BY, LIMIT, and Simple Counts =======================>
+
+21. Fetch all users ordered by newest first.
+
+22. Fetch all products ordered by price from low to high.
+
+23. Fetch all products ordered by price from high to low.
+
+24. Fetch the latest 5 users.
+
+25. Fetch the latest 10 posts.
+
+26. Fetch the cheapest product.
+
+27. Fetch the most expensive product.
+
+28. Count total users.
+
+29. Count total active users.
+
+30. Count total products.
+
+31. Count total out-of-stock products.
+
+32. Count total published posts.
+
+33. Count total pending orders.
+
+34. Count total failed payments.
+
+35. Get the total stock of all products.
+
+36. Get the average product price.
+
+37. Get the minimum product price.
+
+38. Get the maximum product price.
+
+39. Get the total amount of all paid payments.
+
+40. Get the average order amount.
+
+<======================= 41-60: GROUP BY Practice =======================>
+
+41. Count users by city.
+
+42. Count users by status.
+
+43. Count posts by status.
+
+44. Count products by category_id.
+
+45. Count orders by status.
+
+46. Count payments by status.
+
+47. Get total order amount by user_id.
+
+48. Get average order amount by user_id.
+
+49. Get total stock by category_id.
+
+50. Get average product price by category_id.
+
+51. Find cities that have more than 5 users.
+
+52. Find categories that have more than 10 products.
+
+53. Find users who have total order amount greater than 10000.
+
+54. Find order statuses that have more than 20 orders.
+
+55. Count posts created per day.
+
+56. Count users registered per day.
+
+57. Count orders placed per day.
+
+58. Get total sales amount per day.
+
+59. Get the highest product price in each category.
+
+60. Get the lowest product price in each category.
+
+<======================= 61-80: Simple JOIN Practice =======================>
+
+61. Fetch all posts with the user name of the post author.
+
+62. Fetch all comments with the post title.
+
+63. Fetch all comments with the commenter's user name.
+
+64. Fetch all products with their category name.
+
+65. Fetch all orders with the user name of the customer.
+
+66. Fetch all payments with their order total amount.
+
+67. Fetch all order items with product name.
+
+68. Fetch all order items with order status.
+
+69. Fetch all orders with user name and payment status.
+
+70. Fetch all products from the category named Electronics.
+
+71. Fetch all posts written by users from Dhaka.
+
+72. Fetch all orders placed by active users.
+
+73. Fetch all comments made on published posts.
+
+74. Fetch all order items where product price is greater than 1000.
+
+75. Fetch all paid payments with customer name.
+
+76. Fetch all products that have been ordered at least once.
+
+77. Fetch all users who have placed at least one order.
+
+78. Fetch all posts that have at least one comment.
+
+79. Fetch all categories that have at least one product.
+
+80. Fetch all orders that have at least one order item.
+
+<======================= 81-100: LEFT JOIN and Missing Data =======================>
+
+81. Fetch all users and their orders, including users with no orders.
+
+82. Fetch all posts and their comments, including posts with no comments.
+
+83. Fetch all categories and their products, including categories with no products.
+
+84. Fetch all orders and their payments, including orders with no payments.
+
+85. Fetch all products and their order items, including products never ordered.
+
+86. Fetch users who have never placed an order.
+
+87. Fetch posts that have no comments.
+
+88. Fetch products that have never been ordered.
+
+89. Fetch categories that have no products.
+
+90. Fetch orders that have no payment.
+
+91. Fetch posts that have no comments in the last 7 days.
+
+92. Fetch users who have no orders in the last 30 days.
+
+93. Fetch products that were not ordered in the last month.
+
+94. Fetch users who registered but never created a post.
+
+95. Fetch posts that were published but never commented on.
+
+96. Fetch orders that are pending and have no payment.
+
+97. Fetch products that are out of stock and never ordered.
+
+98. Fetch active users who have no posts.
+
+99. Fetch categories that have no available products.
+
+100. Fetch users who have comments but no posts.

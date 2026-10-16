@@ -1,6 +1,13 @@
-Get the maximum order amount for each user.
+Fetch all users. 
 
+$users = User::all();
 
-$customers = Customer::withMax("orders","amount")->get();
+let userss = await prisma.user.findmany();
 
+let page = 1 
+limit = 10 
 
+let orders = await prisma.order.findMany({
+skip: (page - 1) * limit,     
+take: limit, 
+})

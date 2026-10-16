@@ -1,4 +1,3 @@
-Find the average order value per customer.
+3. Fetch all active users.
 
-
-$customers = Customer::withAvg('orders', 'total_amount')->get();
+$users = User::where('status', 'active')->get();

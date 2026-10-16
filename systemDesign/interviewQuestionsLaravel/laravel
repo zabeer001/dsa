@@ -1,5 +1,7 @@
 🔥 Laravel Real-World Query Scenarios — 100 Practice Questions
+
 1–20: Relationship Existence & Filtering
+
 Fetch all posts that don’t have comments in the last 7 days.
 
 Get all users who have never placed an order.

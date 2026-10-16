@@ -1,4 +1,38 @@
-important topics 
+top 5: 
 
-1. matrix *****
-2. string **
+1. [Two Sum — LeetCode 1](https://leetcode.com/problems/two-sum/)
+2. [Valid Parentheses — LeetCode 20](https://leetcode.com/problems/valid-parentheses/)
+3. [Binary Search — LeetCode 704](https://leetcode.com/problems/binary-search/)
+4. [Reverse Linked List — LeetCode 206](https://leetcode.com/problems/reverse-linked-list/)
+5. [Flood Fill — LeetCode 733](https://leetcode.com/problems/flood-fill/)
+
+
+top 20: Yes — for **high-end Bangladesh companies like Brain Station 23 / Enosis and ordinary-to-strong US startups or mid-sized companies**, I would change the list a little.
+
+
+So after your existing five, **this is the 20 I would actually practice**:
+
+| #  | LeetCode                                                                                                                            | Main thing               |
+| -- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| 1  | [Best Time to Buy and Sell Stock — 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                             | Array / Greedy           |
+| 2  | [Valid Anagram — 242](https://leetcode.com/problems/valid-anagram/)                                                                 | Hashing                  |
+| 3  | [Group Anagrams — 49](https://leetcode.com/problems/group-anagrams/)                                                                | Hash Map                 |
+| 4  | [Maximum Subarray — 53](https://leetcode.com/problems/maximum-subarray/)                                                            | Kadane / DP idea         |
+| 5  | [Longest Substring Without Repeating Characters — 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window           |
+| 6  | [3Sum — 15](https://leetcode.com/problems/3sum/)                                                                                    | Sorting + Two Pointers   |
+| 7  | [Product of Array Except Self — 238](https://leetcode.com/problems/product-of-array-except-self/)                                   | Prefix / Suffix          |
+| 8  | [Merge Intervals — 56](https://leetcode.com/problems/merge-intervals/)                                                              | Sorting / Intervals      |
+| 9  | [Search in Rotated Sorted Array — 33](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                | Binary Search variation  |
+| 10 | [Merge Two Sorted Lists — 21](https://leetcode.com/problems/merge-two-sorted-lists/)                                                | Linked List              |
+| 11 | [Linked List Cycle — 141](https://leetcode.com/problems/linked-list-cycle/)                                                         | Fast / Slow pointers     |
+| 12 | [Maximum Depth of Binary Tree — 104](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                   | Tree DFS                 |
+| 13 | [Binary Tree Level Order Traversal — 102](https://leetcode.com/problems/binary-tree-level-order-traversal/)                         | Tree BFS                 |
+| 14 | [Validate Binary Search Tree — 98](https://leetcode.com/problems/validate-binary-search-tree/)                                      | BST / Recursion          |
+| 15 | [Number of Islands — 200](https://leetcode.com/problems/number-of-islands/)                                                         | **Flood Fill variation** |
+| 16 | [Rotting Oranges — 994](https://leetcode.com/problems/rotting-oranges/)                                                             | Multi-source BFS         |
+| 17 | [Course Schedule — 207](https://leetcode.com/problems/course-schedule/)                                                             | Graph / Cycle            |
+| 18 | [Kth Largest Element in an Array — 215](https://leetcode.com/problems/kth-largest-element-in-an-array/)                             | Heap                     |
+| 19 | [House Robber — 198](https://leetcode.com/problems/house-robber/)                                                                   | Basic DP                 |
+| 20 | [Subsets — 78](https://leetcode.com/problems/subsets/)                                                                              | Backtracking             |
+
+
